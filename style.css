@@ -1,0 +1,192 @@
+*{
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-size: 24px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+}
+
+body{
+    background-image: url(watchlist.images/image2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.watchlist{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.watchlist h1{
+    color: #000066;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 35px;
+
+}
+
+.watchlist h1 img{
+    max-width: 100%;
+    width: 60px;
+    margin-left: 10px;
+}
+
+.row{
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+#input-box{
+    
+    background-color: #fff;
+    height: 33px;
+    padding: 3px 7px;
+    line-height: normal;
+    border: 1px solid #a6a6a6;
+    border-top-color: #949494;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+    outline: 0;
+    color: #111;
+    font-size: 13px;
+    margin-left: 30px;
+
+    
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+    border-color: #ffccb3;
+    box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+
+}
+
+#input-box:focus{
+    border-color: #e77600;
+    box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+}
+
+.addbutton{
+    background-color: #ffccb3;
+    color: #000;
+    font-weight: normal;
+    font-size: 18px;
+    border: none;
+    align-items: center;
+    appearance: none;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    border: 0;
+    font-family: "JetBrains Mono",monospace;
+    height: 30px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 14px;
+    padding-right: 14px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    vertical-align: middle;
+    margin-left: 10px;
+    transition: 200ms;
+    user-select: none;
+}
+
+.addbutton:focus,
+.addbutton:hover{
+    outline: 0;
+    background: #ffbb99;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-32:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+  }
+
+.addbutton:active{
+    box-shadow: #ff884d 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+ul li{
+    text-align: left;
+    list-style: none;
+    font-size: 22px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(watchlist.images/uncheck.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(watchlist.images/check.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #313131;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    text-align: center;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
+
+#list-container{
+    padding: 0;
+    text-align: center;
+}
+
+
+
